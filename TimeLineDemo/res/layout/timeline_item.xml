@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="60dp"
+            android:background="#A6A6A6" />
+
+        <ImageView
+            android:id="@+id/left_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:src="@drawable/medicalcheck2" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="60dp"
+            android:background="#A6A6A6" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_alignLeft="@id/left"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="vertical" 
+        android:gravity="center"
+        android:layout_marginLeft="100dp">
+        
+        <TextView 
+            android:id="@+id/right_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="aaa"/>
+    </LinearLayout>
+
+</RelativeLayout>
